@@ -28,17 +28,23 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .container {
   background-color: var(--main-background-color);
   width: 480px;
-  margin: 150px auto;
-  padding: 30px;
-  border-radius: 20px;
+  margin: 50px auto;
+  padding: 24px;
+  border-radius: 15px;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  color: var(--main-text-color);
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .password {

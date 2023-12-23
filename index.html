@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon/password.ico" type="image/x-icon" />
+    <title>Password Generator - Strong Random Passwords</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="password">
+        <input type="text" value="test" />
+        <button class="copy">Copy</button>
+      </div>
+      <div class="range">
+        <span class="spanOne">Length</span>
+        <input type="range" min="8" max="40" value="16" />
+        <span class="spanTwo">16</span>
+      </div>
+      <div class="options">
+        <div class="option">
+          <label for="azCheckbox">
+            <input type="checkbox" name="azCheckbox" id="azCheckbox" checked />
+            <span>Lowercase (abc)</span>
+          </label>
+        </div>
+        <div class="option">
+          <label for="AZCheckbox">
+            <input type="checkbox" name="AZCheckbox" id="AZCheckbox" checked />
+            <span>Uppercase (ABC)</span>
+          </label>
+        </div>
+        <div class="option">
+          <label for="09Checkbox">
+            <input type="checkbox" name="09Checkbox" id="09Checkbox" />
+            <span>Numbers (123)</span>
+          </label>
+        </div>
+        <div class="option">
+          <label for="specialCharsCheckbox">
+            <input
+              type="checkbox"
+              name="specialCharsCheckbox"
+              id="specialCharsCheckbox"
+            />
+            <span>Symbols (@&$!#?)</span>
+          </label>
+        </div>
+      </div>
+      <button class="generate">Generate</button>
+    </div>
+
+    <script src="generator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-text-color: #fff;
+  --main-background-color: #0a2d4d;
+  --secondary-background-color: #0a253c;
+  --button-color: #0572ec;
+  --button-color-hover: #034ea6;
+
+  --main-font-size: 16px;
+  --coding-font-size: 20px;
+
+  --main-font-family: "Proxima Nova", "Inter", "Open Sans", system-ui,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
+  --coding-font-family: "Consolas", "JetBrains Mono", "Roboto Mono", monospace;
+}
+
+body {
+  background-color: var(--main-text-color);
+  color: var(--main-text-color);
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--main-background-color);
+  width: 480px;
+  margin: 150px auto;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.password {
+  display: grid;
+  grid-template-columns: auto min-content;
+  border-radius: 7px;
+  overflow: hidden;
+  outline: none;
+}
+
+.password input {
+  border: none;
+  padding: 7px 10px;
+  font-size: var(--coding-font-size);
+  font-family: var(--coding-font-family);
+  background-color: var(--main-text-color);
+  color: var(--main-background-color);
+  font-weight: 600;
+  outline: none;
+}
+
+.password button {
+  border-radius: 0;
+}
+
+.copy,
+.generate {
+  background-color: var(--button-color);
+  color: var(--main-text-color);
+  border: none;
+  cursor: pointer;
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  text-transform: uppercase;
+  border-radius: 7px;
+  padding: 5px 15px;
+  font-weight: 500;
+  outline: none;
+  transition: background-color 0.15s;
+}
+
+.copy:hover,
+.generate:hover {
+  background-color: var(--button-color-hover);
+}
+
+.range {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+}
+
+.range span {
+  color: var(--main-text-color);
+  background-color: var(--secondary-background-color);
+  border-radius: 7px;
+  padding: 10px 16px;
+  font-size: var(--main-font-size);
+}
+
+.range .spanOne {
+  margin-right: 15px;
+}
+
+.range .spanTwo {
+  margin-left: 15px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: start;
+}
+
+.options label {
+  display: block;
+  background-color: var(--secondary-background-color);
+  border-radius: 7px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.generate {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+}
